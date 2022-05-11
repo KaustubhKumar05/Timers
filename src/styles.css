@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  --accent: #0f4c75;
+  --primary: #a6e3e9;
+  --secondary: #cbf1f5;
+  --radius: 5px;
+  background-color: var(--secondary);
+  overflow-y: hidden;
+}
+
+.main {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  min-width: 350px;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.bar-component {
+  height: 100px;
+  min-width: 300px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bar-component input {
+  width: 60%;
+  outline: none;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  text-align: center;
+  height: 40%;
+}
+
+.bar-component button {
+  height: 40%;
+  border-radius: var(--radius);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: var(--accent);
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.timer-array {
+  display: flex;
+  flex-grow: 1;
+  width: 90%;
+  justify-content: space-evenly;
+  min-width: 350px;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.timer {
+  display: flex;
+  width: fit-content;
+  min-width: 300px;
+  margin: 5px;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.btn-array {
+  display: flex;
+  width: 80%;
+  height: 15%;
+  justify-content: space-evenly;
+}
+
+.time-display {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  padding: 0;
+  align-items: flex-end;
+  height: 90%;
+  font-size: 5em;
+  bottom: 0;
+}
+
+.second {
+  font-size: 0.5em;
+  margin-bottom: 10px;
+}
+
+.play-pause {
+  background-color: #519259;
+}
+
+.reset {
+  background-color: #eec373;
+}
+
+.delete {
+  background-color: #d9534f;
+}
